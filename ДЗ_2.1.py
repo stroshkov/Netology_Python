@@ -27,4 +27,5 @@ with open('Текстовый файл для ДЗ первое второй м�
             cook_book.update({'Название блюда:', name_ingredient})
             cook_book.update({'Количество ингредиентов:', number_of_ingredients})
             cook_book.update({'Ингредиенты:', ingredients_book})
+        content.append(cook_book)
     print(*content)
