@@ -28,6 +28,7 @@ base_response = []
 base_response.append(response)
 individual_base = {}
 
+#по поводу части кода '.user_id': я правильно написал или нужно его не через точку а в скобках?
 for friend in base_response:
   response_individual = request.get('https://api.vk.com/method/friends.get' + '.user_id',friend, params)
   individual_base.update({'friend'}: response_individual)
