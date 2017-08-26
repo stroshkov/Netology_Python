@@ -1,7 +1,7 @@
 import os
 
 # В данной директории ошибся при создании папки и не знаю как исправить (папка Migrations в папке Migrations), но код написан как
-будто папка лежит на том же уровне, что и файл homework.py
+# будто папка лежит на том же уровне, что и файл homework.py
 
 migrations = 'Migrations'
 current_dir = os.path.dirname(os.path.abspath(__file__))
