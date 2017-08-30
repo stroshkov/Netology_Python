@@ -13,8 +13,6 @@ os.mkdir(os.path.join((current_dir, new_source)))
 
 # пройдем по всем фотографиям и дадим названи новым фотографиям в формате от 1 до 5
 for photo in list_of_photo:
-    for elements in range:
-        subprocess.run('convert.exe')
-        convert photo - resize 200 elements.jpg
-        __elements.jpg__ = os.path.join(current_dir, new_source)
-
+    args = [program_path, file, '-resize', '200', file]
+    proc = Popen(args)
+    
