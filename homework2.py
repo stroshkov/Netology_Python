@@ -26,7 +26,7 @@ def calculation(file_for_calculation):
         print(price, currency, convert_currency(price, currency), price_of_trip)
 # в приложении №1 (внизу кода) указан вывод верхней строки. Всплывает ошибка в самом конце, когда уже все посчитано   
     
-    return price_of_trip
+    return round(price_of_trip, 1)
 
 
 with open('currencies.txt', encoding="utf8") as file:
