@@ -2,7 +2,6 @@ import os
 import subprocess
 
 def photo_converter(photo_for_resize):
-    print('Идет обработка фотографии {}'.format(photo_for_resize))
     subprocess.call('convert {} -resize 200 {}'.format(source_file, result_file))
     print('Обработка фотографии {} завершена'.format(photo_for_resize))
 
