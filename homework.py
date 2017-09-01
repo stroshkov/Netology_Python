@@ -2,16 +2,20 @@ import os
 
 # В данной директории ошибся при создании папки и не знаю как исправить (папка Migrations в папке Migrations), но код написан как
 # будто папка лежит на том же уровне, что и файл homework.py
-
 migrations = 'Migrations'
 current_dir = os.path.dirname(os.path.abspath(__file__))
 folder_with_files = os.path.join(current_dir, migrations)
 list_of_files = os.listdir(folder_with_files)
 
 
+def input_text_function():
+    input_text = input('Введите часть текста в файле:')
+    return input_text
+
+
 def counting(input_data):
+    number_files = 0
     for file in list_of_files:
-        number_files = 0
         text = []
         test_file = os.path.join(folder_with_files, file)
 
@@ -27,13 +31,8 @@ def counting(input_data):
             index_of_file = list_of_files.index(file)
             list_of_files.pop(index_of_file)
 
-        print(number_files)
+    print(number_files)
+    return counting(input_text_function())
 
-input_data_first = input('Введите часть текста в файле:')
-counting(input_data_first)
 
-input_data_second = input('Введите часть текста в файле:')
-counting(input_data_second)
-
-input_data_third = input('Введите часть текста в файле:')
-counting(input_data_third)
+counting(input_text_function())
