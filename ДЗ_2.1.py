@@ -9,7 +9,7 @@ def get_cookbook():
     
     for line in file:
       dirty_dish_name = line.lower()
-      dish_name = dirty_dish_name[:len(dirty_dish_name)-1]
+      dish_name = dirty_dish_name.strip()
       cookbook[dish_name] = []
       count_of_ingridients = int(file.readline())
       
