@@ -22,19 +22,16 @@ class Animals:
 
 
     def giving_eggs(self):
-        if self.presence_of_wings == True and self.presence_of_horns == False \
-                and self.legs == 2:
-            return 'Животное способно нести яица'
-        else:
-            return 'Животное не способно нести яица'
+        return 'Животное способно нести яица' if self.presence_of_wings and not self.presence_of_horns \
+                                                 and self.legs == 2 else 'Животное не способно нести яица'
 
 
-    def voice(self, text_of_voice):
-        print(text_of_voice)
+    def voice(self):
+        return self.text_of_voice
 
 
-    def print_name(self, name):
-        return 'Животное зовут', name
+    def print_name(self):
+        return 'Животное зовут', self.name
 
 
 class Cows(Animals):
@@ -80,3 +77,19 @@ class Gooses(Animals):
     presence_of_horns = False
     text_of_voice = "Ga ga ga"
     legs = 2
+
+animal_1 = Gooses('Ivan')
+print(*animal_1.print_name())
+print('У животного есть рога - ', animal_1.presence_of_horns)
+print('Животное издает следующие звуки - ', animal_1.voice(), '\n')
+
+
+animal_2 = Goats('Ivan')
+print(*animal_2.print_name())
+print('У животного есть рога - ', animal_2.presence_of_horns)
+print('Животное издает следующие звуки - ', animal_2.voice(), '\n')
+
+animal_3 = Cows('Ivan')
+print(*animal_3.print_name())
+print('У животного есть рога - ', animal_3.presence_of_horns)
+print('Животное издает следующие звуки - ', animal_3.voice(), '\n')
