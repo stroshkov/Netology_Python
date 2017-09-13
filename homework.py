@@ -35,46 +35,38 @@ class Animals:
 
 
 class Cows(Animals):
-    presence_of_wings = False
     presence_of_horns = True
     text_of_voice = "Muuu"
 
 
 class Goats(Animals):
-    presence_of_wings = False
     presence_of_horns = True
     text_of_voice = "Beee"
 
 
 class Sheeps(Animals):
-    presence_of_wings = False
     presence_of_horns = True
     text_of_voice = "Baaaaa"
 
 
 class Pigs(Animals):
-    presence_of_wings = False
-    presence_of_horns = False
     text_of_voice = "Hruuuu"
 
 
 class Ducks(Animals):
     presence_of_wings = True
-    presence_of_horns = False
     text_of_voice = "Qua Qua"
     legs = 2
 
 
 class Chickens(Animals):
     presence_of_wings = True
-    presence_of_horns = False
     text_of_voice = "Kud ku dah"
     legs = 2
 
 
 class Gooses(Animals):
     presence_of_wings = True
-    presence_of_horns = False
     text_of_voice = "Ga ga ga"
     legs = 2
 
