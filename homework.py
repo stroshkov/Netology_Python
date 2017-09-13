@@ -18,7 +18,7 @@ class Animals:
 
 
     def ability_to_defend(self):
-        return 'Животное способно защищаться' if self.presence_of_horns == True else 'Животное беззащитно'
+        return 'Животное способно защищаться' if self.presence_of_horns else 'Животное беззащитно'
 
 
     def giving_eggs(self):
